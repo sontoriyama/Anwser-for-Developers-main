@@ -1,0 +1,65 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .container {
+    margin-top: 0;
+  }
+}
+
+.answersBox{
+  width: 75vw;
+  height: 20rem;
+  border-radius: 5px;
+  margin-top: 4rem;
+  padding: 1rem;
+  resize: none;
+  background-color: rgba(45, 45, 45, 0.5);
+  color: #eee;
+  border: solid 2px var(--highlight);
+  backdrop-filter: blur(5px);
+  font-family: var(--primaryFont);
+  font-size: 1.2rem;
+}
+@media (min-width: 768px) {
+  .answersBox{
+    width: 35vw;
+    margin-top: 1rem;
+  }
+}
+
+.btnInfo{
+  margin: 0 auto;
+  width: 75vw;
+  border-radius: 5px;
+  background-color: var(--highlight);
+  font-size: 3rem;
+  font-family: var(--primaryFont);
+  font-weight: 800;
+  color: var(--secondary);
+  transition: all .2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .btnInfo{
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+  }
+}
+
+.btnInfo:hover {
+  cursor: pointer;
+  box-shadow: 0 0 25px var(--highlight);
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
